@@ -341,22 +341,36 @@ document.addEventListener("DOMContentLoaded", function () {
     casaLima: [
       "../../assets/arquiimg/casaLima/01.png",
       "../../assets/arquiimg/casaLima/02.png",
+      "../../assets/arquiimg/casaLima/03.png",
+      "../../assets/arquiimg/casaLima/04%20(1).png",
     ],
     casaOlena: [
       "../../assets/arquiimg/casaOlena/01%20(2).png",
       "../../assets/arquiimg/casaOlena/02%20(1).png",
+      "../../assets/arquiimg/casaOlena/03%20(1).png",
+      "../../assets/arquiimg/casaOlena/04.png",
     ],
     casaTambau: [
       "../../assets/arquiimg/casaTambau/06%20(1).png",
       "../../assets/arquiimg/casaTambau/07.png",
+      "../../assets/arquiimg/casaTambau/08%20(1).png",
+      "../../assets/arquiimg/casaTambau/09%20(1).png",
+      "../../assets/arquiimg/casaTambau/10%20(1)%20(1).png",
+      "../../assets/arquiimg/casaTambau/WhatsApp%20Image%202025-08-09%20at%209.35.57%20AM%20(1).jpeg",
+      "../../assets/arquiimg/casaTambau/WhatsApp%20Image%202025-08-09%20at%209.35.57%20AM%20(2).jpeg",
+      "../../assets/arquiimg/casaTambau/WhatsApp%20Image%202025-08-09%20at%209.35.57%20AM.jpeg",
     ],
     hospCoracaojesus: [
       "../../assets/arquiimg/hospCoracaojesus/03%20(2).png",
       "../../assets/arquiimg/hospCoracaojesus/04%20(2).png",
+      "../../assets/arquiimg/hospCoracaojesus/05-2.png",
+      "../../assets/arquiimg/hospCoracaojesus/INTERIOR01.png",
+      "../../assets/arquiimg/hospCoracaojesus/INTERIOR02.png",
     ],
     "consRi-so": [
       "../../assets/arqint/consRi-so/IMG_1306.PNG",
       "../../assets/arqint/consRi-so/IMG_1307.PNG",
+      "../../assets/arqint/consRi-so/IMG_1308.PNG",
     ],
   };
   let carouselList = [];

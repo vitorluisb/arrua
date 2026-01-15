@@ -128,6 +128,20 @@ body {
   transition: transform 0.3s ease;
 }
 
+/* Carrossel: assegurar proporção correta sem depender de utilitários arbitrários */
+#carousel-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#carousel-image {
+  max-width: 90vw;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
 .project-overlay {
   position: absolute;
   top: 0;

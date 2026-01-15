@@ -1,0 +1,41 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/css/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" }
+      ]
+    },
+    {
+      "source": "/js/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Referrer-Policy", "value": "no-referrer-when-downgrade" }
+      ]
+    }
+  ],
+  "redirects": [
+    { "source": "/projects", "destination": "/pages/projects.html", "permanent": false },
+    { "source": "/contact", "destination": "/pages/contact.html", "permanent": false },
+    { "source": "/office", "destination": "/pages/office.html", "permanent": false },
+    { "source": "/projects/arquitetura", "destination": "/pages/projects/arquitetura.html", "permanent": false },
+    { "source": "/projects/interiores", "destination": "/pages/projects/interiores.html", "permanent": false },
+    { "source": "/projects/cidade", "destination": "/pages/projects/cidade.html", "permanent": false },
+    { "source": "/projects/comercial", "destination": "/pages/projects/comercial.html", "permanent": false }
+  ]
+}

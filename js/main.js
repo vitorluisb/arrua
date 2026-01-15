@@ -63,8 +63,11 @@ document.addEventListener("DOMContentLoaded", function () {
   // Smooth scroll para links de navegação
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
+      const href = this.getAttribute("href") || "";
+      const id = href.startsWith("#") ? href.slice(1) : "";
+      if (!id) return;
       e.preventDefault();
-      const target = document.querySelector(this.getAttribute("href"));
+      const target = document.getElementById(id);
       if (target) {
         target.scrollIntoView({
           behavior: "smooth",
@@ -367,8 +370,8 @@ document.addEventListener("DOMContentLoaded", function () {
     "consRi-so": [
       "../../assets/arqint/consRi-so/IMG_1306.PNG",
       "../../assets/arqint/consRi-so/IMG_1307.PNG",
-      "../../assets/arqint/consRi-so/IMG_1308.PNG"
-    ]
+      "../../assets/arqint/consRi-so/IMG_1308.PNG",
+    ],
   };
   let carouselList = [];
   let carouselIndex = 0;

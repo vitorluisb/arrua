@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>escritório - arruar arquitetura</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg-white text-black">
+    <!-- Header -->
+    <header class="w-full border-b border-black">
+        <div class="max-w-[1100px] mx-auto px-6 md:px-16 lg:px-32 flex justify-between items-center py-4">
+            <a href="../index.html" class="text-xl font-medium lowercase">arruar</a>
+            <!-- Navegação desktop -->
+            <nav class="hidden md:flex space-x-8 text-sm lowercase" aria-label="navegação principal">
+                <a href="../index.html" class="hover:opacity-75">inicio</a>
+                <div class="relative">
+                    <button class="projects-toggle hover:opacity-75" aria-haspopup="true" aria-expanded="false" aria-controls="projects-submenu">projeto</button>
+                    <div id="projects-submenu" class="absolute right-0 mt-2 w-64 bg-white border border-black shadow-sm hidden z-50 dropdown" role="menu" aria-label="subpastas de projeto">
+                        <div class="px-4 py-2 text-xs text-gray-600 lowercase">subpastas</div>
+                        <a href="projects/arquitetura.html" class="flex items-center justify-between px-4 py-2 hover:underline submenu-item" role="menuitem" tabindex="-1"><span>arquitetura</span></a>
+                        <a href="projects/interiores.html" class="flex items-center justify-between px-4 py-2 hover:underline submenu-item" role="menuitem" tabindex="-1">
+                            <span>interiores</span>
+                        </a>
+                        <a href="projects/comercial.html" class="flex items-center justify-between px-4 py-2 hover:underline submenu-item" role="menuitem" tabindex="-1"><span>comercial</span></a>
+                        <a href="projects/cidade.html" class="flex items-center justify-between px-4 py-2 hover:underline submenu-item" role="menuitem" tabindex="-1">
+                            <span>cidade</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="office.html" class="hover:opacity-75">escritório</a>
+                <a href="contact.html" class="hover:opacity-75">contato</a>
+            </nav>
+            <!-- Botão hambúrguer (mobile) -->
+            <button class="menu-button md:hidden leading-none" aria-controls="mobile-menu" aria-expanded="false" aria-label="abrir menu">
+                <span class="hamburger" aria-hidden="true"><span></span><span></span><span></span></span>
+            </button>
+        </div>
+        <!-- Painel de menu móvel -->
+        <div id="mobile-menu" class="fixed top-0 right-0 h-full w-3/4 max-w-xs bg-white border-l border-black transform translate-x-full transition-transform duration-300 ease-out md:hidden z-50" aria-hidden="true">
+            <div class="flex justify-end p-4">
+                <button class="menu-close text-2xl" aria-label="fechar menu">−</button>
+            </div>
+            <nav class="flex flex-col space-y-6 text-lg lowercase px-8" aria-label="navegação móvel">
+                <a href="../index.html" class="hover:opacity-75 mobile-link">inicio</a>
+                <div>
+                    <div class="text-gray-700 text-sm mb-2">projeto</div>
+                    <div class="flex flex-col space-y-3">
+                        <a href="projects/arquitetura.html" class="hover:underline mobile-link">arquitetura</a>
+                        <a href="projects/interiores.html" class="hover:underline mobile-link">interiores</a>
+                        <a href="projects/comercial.html" class="hover:underline mobile-link">comercial</a>
+                        <a href="projects/cidade.html" class="hover:underline mobile-link">cidade</a>
+                    </div>
+                </div>
+                <a href="office.html" class="hover:opacity-75 mobile-link">escritório</a>
+                <a href="contact.html" class="hover:opacity-75 mobile-link">contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Escritório Section -->
+    <section class="py-16 md:py-20">
+        <div class="max-w-[1100px] mx-auto px-6 md:px-16 lg:px-32">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <!-- Texto à esquerda -->
+                <div class="space-y-8" data-aos="fade-up">
+                    <h1 class="text-3xl font-light lowercase">escritório</h1>
+                    
+                    <div class="space-y-6 text-base leading-relaxed">
+                        <p>
+                            o arruar arquitetura é um escritório de arquitetura e urbanismo fundado em 2020, 
+                            dedicado à criação de espaços que harmonizam funcionalidade, estética e 
+                            sustentabilidade.
+                        </p>
+                        
+                        <p>
+                            nosso trabalho abrange desde projetos residenciais e comerciais até intervenções 
+                            urbanas e mobiliário, sempre com foco no detalhe e na qualidade espacial.
+                        </p>
+                        
+                        <p>
+                            acreditamos que a arquitetura deve responder às necessidades específicas de cada 
+                            cliente, criando soluções únicas que dialogam com o contexto e elevam a experiência 
+                            do espaço.
+                        </p>
+                        
+                        <div class="pt-8 space-y-4">
+                            <h2 class="text-xl font-light lowercase">prêmios e reconhecimentos</h2>
+                            <ul class="space-y-2 text-sm">
+                                <li>• premiação iab/sp melhores projetos 2025 - vencedor</li>
+                                <li>• 14ª bienal internacional de arquitetura de são paulo - projeto selecionado</li>
+                                <li>• concurso nacional memorial erbo stenzel - 1º prêmio</li>
+                                <li>• premiação nacional iab brasil melhores projetos 2023 - vencedor</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagem à direita -->
+                <div class="space-y-8" data-aos="fade-up" data-aos-delay="200">
+                    <img 
+                        src="https://coreva-normal.trae.ai/api/ide/v1/text_to_image?prompt=Minimalist%20architectural%20office%20interior%2C%20concrete%20walls%2C%20large%20windows%2C%20natural%20light%2C%20black%20steel%20details%2C%20white%20furniture%2C%20architectural%20models%20on%20tables%2C%20clean%20lines%2C%20documentary%20style%2C%20neutral%20colors%2C%20professional%20architecture%20studio%2C%2016%3A9%20aspect%20ratio%2C%20no%20rounded%20corners%2C%20extreme%20minimalism&image_size=landscape_16_9" 
+                        alt="Escritório Arruar Arquitetura"
+                        class="w-full h-auto"
+                    >
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <img 
+                            src="https://coreva-normal.trae.ai/api/ide/v1/text_to_image?prompt=Square%20architectural%20detail%2C%20concrete%20texture%20close-up%2C%20natural%20light%20shadows%2C%20monochromatic%20palette%2C%20architectural%20material%20study%2C%20documentary%20photography%2C%20clean%20composition%2C%20square%20format%2C%20minimalist%20aesthetic%2C%20no%20rounded%20corners%2C%20professional%20detail%20shot&image_size=square" 
+                            alt="Detalhe de concreto"
+                            class="w-full h-48 object-cover"
+                        >
+                        <img 
+                            src="https://coreva-normal.trae.ai/api/ide/v1/text_to_image?prompt=Square%20architectural%20model%20photograph%2C%20white%20cardboard%20model%2C%20black%20background%2C%20studio%20lighting%2C%20architectural%20maquette%2C%20clean%20lines%2C%20monochromatic%20palette%2C%20professional%20documentation%2C%20square%20format%2C%20minimalist%20style%2C%20no%20rounded%20corners%2C%20extreme%20minimalism&image_size=square" 
+                            alt="Modelo arquitetônico"
+                            class="w-full h-48 object-cover"
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-full border-t border-black">
+        <div class="max-w-[1100px] mx-auto px-6 md:px-16 lg:px-32 grid grid-cols-4 gap-8 text-xs lowercase py-6">
+            <div>arruar arquitetura © 2025</div>
+            <div>av. paulista 1499, são paulo-sp</div>
+            <div>contato@arruararquitetura.com</div>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:opacity-75">instagram</a>
+                <a href="#" class="hover:opacity-75">linkedin</a>
+                <a href="#" class="hover:opacity-75">whatsapp</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>

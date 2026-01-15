@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contato - arruar arquitetura</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="bg-white text-black">
+    <!-- Header -->
+    <header class="w-full border-b border-black">
+        <div class="max-w-[1100px] mx-auto px-6 md:px-16 lg:px-32 flex justify-between items-center py-4">
+            <a href="../index.html" class="text-xl font-medium lowercase">arruar</a>
+            <!-- Navegação desktop -->
+            <nav class="hidden md:flex space-x-8 text-sm lowercase" aria-label="navegação principal">
+                <a href="../index.html" class="hover:opacity-75">inicio</a>
+                <div class="relative">
+                    <button class="projects-toggle hover:opacity-75" aria-haspopup="true" aria-expanded="false"
+                        aria-controls="projects-submenu">projeto</button>
+                    <div id="projects-submenu"
+                        class="absolute right-0 mt-2 w-64 bg-white border border-black shadow-sm hidden z-50 dropdown"
+                        role="menu" aria-label="subpastas de projeto">
+                        <div class="px-4 py-2 text-xs text-gray-600 lowercase">subpastas</div>
+                        <a href="projects/arquitetura.html"
+                            class="flex items-center justify-between px-4 py-2 hover:underline submenu-item"
+                            role="menuitem" tabindex="-1"><span>arquitetura</span></a>
+                        <a href="projects/interiores.html"
+                            class="flex items-center justify-between px-4 py-2 hover:underline submenu-item"
+                            role="menuitem" tabindex="-1">
+                            <span>interiores</span>
+                        </a>
+                        <a href="projects/comercial.html"
+                            class="flex items-center justify-between px-4 py-2 hover:underline submenu-item"
+                            role="menuitem" tabindex="-1"><span>comercial</span></a>
+                        <a href="projects/cidade.html"
+                            class="flex items-center justify-between px-4 py-2 hover:underline submenu-item"
+                            role="menuitem" tabindex="-1">
+                            <span>cidade</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="office.html" class="hover:opacity-75">escritório</a>
+                <a href="contact.html" class="hover:opacity-75">contato</a>
+            </nav>
+            <!-- Botão hambúrguer (mobile) -->
+            <button class="menu-button md:hidden leading-none" aria-controls="mobile-menu" aria-expanded="false"
+                aria-label="abrir menu">
+                <span class="hamburger" aria-hidden="true"><span></span><span></span><span></span></span>
+            </button>
+        </div>
+        <!-- Painel de menu móvel -->
+        <div id="mobile-menu"
+            class="fixed top-0 right-0 h-full w-3/4 max-w-xs bg-white border-l border-black transform translate-x-full transition-transform duration-300 ease-out md:hidden z-50"
+            aria-hidden="true">
+            <div class="flex justify-end p-4">
+                <button class="menu-close text-2xl" aria-label="fechar menu">−</button>
+            </div>
+            <nav class="flex flex-col space-y-6 text-lg lowercase px-8" aria-label="navegação móvel">
+                <a href="../index.html" class="hover:opacity-75 mobile-link">inicio</a>
+                <div>
+                    <div class="text-gray-700 text-sm mb-2">projeto</div>
+                    <div class="flex flex-col space-y-3">
+                        <a href="projects/arquitetura.html" class="hover:underline mobile-link">arquitetura</a>
+                        <a href="projects/interiores.html" class="hover:underline mobile-link">interiores</a>
+                        <a href="projects/comercial.html" class="hover:underline mobile-link">comercial</a>
+                        <a href="projects/cidade.html" class="hover:underline mobile-link">cidade</a>
+                    </div>
+                </div>
+                <a href="office.html" class="hover:opacity-75 mobile-link">escritório</a>
+                <a href="contact.html" class="hover:opacity-75 mobile-link">contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contato Section -->
+    <section class="py-16 md:py-20">
+        <div class="max-w-[1100px] mx-auto px-6 md:px-16 lg:px-32">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Cartões de contato -->
+                <div class="space-y-8" data-aos="fade-up">
+                    <!-- Cartão branco -->
+                    <div class="bg-white border border-black">
+                        <div class="bg-black text-white p-4">
+                            <h3 class="text-sm lowercase font-light">informações de contato</h3>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <div class="text-sm lowercase">
+                                <p>+55 11 96190 4000</p>
+                                <p>contato@arruararquitetura.com</p>
+                                <p>@arruararquitetura</p>
+                            </div>
+                            <div class="pt-4 border-t border-black">
+                                <p class="text-xs lowercase text-gray-600">categorias de trabalho:</p>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="text-xs lowercase">residencial</span>
+                                    <span class="text-xs lowercase">•</span>
+                                    <span class="text-xs lowercase">comercial</span>
+                                    <span class="text-xs lowercase">•</span>
+                                    <span class="text-xs lowercase">reformas</span>
+                                    <span class="text-xs lowercase">•</span>
+                                    <span class="text-xs lowercase">mobiliário</span>
+                                    <span class="text-xs lowercase">•</span>
+                                    <span class="text-xs lowercase">urbanismo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cartão preto -->
+                    <div class="bg-black text-white p-8 text-center">
+                        <div class="text-2xl lowercase mb-2">arruar</div>
+                        <div class="text-sm lowercase">arruararquitetura.com</div>
+                    </div>
+                </div>
+
+                <!-- Formulário -->
+                <div class="space-y-8" data-aos="fade-up" data-aos-delay="200">
+                    <h1 class="text-3xl font-light lowercase">entre em contato</h1>
+
+                    <form class="contact-form" action="contato.php" method="POST">
+                        <div class="space-y-6">
+                            <input type="text" name="nome" placeholder="nome" required class="lowercase">
+
+                            <input type="email" name="email" placeholder="email" required class="lowercase">
+
+                            <input type="tel" name="telefone" placeholder="telefone" class="lowercase">
+
+                            <textarea name="mensagem" placeholder="mensagem" rows="6" required
+                                class="lowercase resize-none"></textarea>
+
+                            <button type="submit" class="lowercase">
+                                enviar mensagem
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Informações adicionais -->
+                    <div class="space-y-2 text-sm lowercase">
+                        <p>av. paulista 1499 - são paulo-sp</p>
+                        <p>contato@arruararquitetura.com</p>
+                        <p>+55 11 96190 4000</p>
+                        <div class="flex space-x-4 pt-2">
+                            <a href="#" class="hover:opacity-75">instagram</a>
+                            <a href="#" class="hover:opacity-75">linkedin</a>
+                            <a href="#" class="hover:opacity-75">whatsapp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa Section -->
+    <section class="py-16 md:py-20 border-t border-black">
+        <div class="max-w-[1100px] mx-auto px-6 md:px-16 lg:px-32">
+            <h2 class="text-2xl font-light lowercase mb-8 text-center" data-aos="fade-up">localização</h2>
+            <div class="map-container" data-aos="fade-up" data-aos-delay="200">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.0511146949634!2d-34.86400172425821!3d-7.120075169825486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd55ec977d57%3A0x9188731a0f28a4be!2sAv.%20Pres.%20Epit%C3%A1cio%20Pessoa%2C%201000%20-%20Torre%2C%20Jo%C3%A3o%20Pessoa%20-%20PB%2C%2058040-000!5e0!3m2!1spt-BR!2sbr!4v1768436570426!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%"
+                    height="450" style="border:0;" allowfullscreen="" loading="lazy" class="w-full"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-full border-t border-black">
+        <div class="max-w-[1100px] mx-auto px-6 md:px-16 lg:px-32 grid grid-cols-4 gap-8 text-xs lowercase py-6">
+            <div>arruar arquitetura © 2026</div>
+            <div>av. epitacio pessoa, joao pessoa-PB</div>
+            <div>contato@arruararquitetura.com</div>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:opacity-75">instagram</a>
+                <a href="#" class="hover:opacity-75">linkedin</a>
+                <a href="#" class="hover:opacity-75">whatsapp</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js?v=2"></script>
+</body>
+
+</html>

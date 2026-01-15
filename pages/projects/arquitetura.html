@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projetos / arquitetura - arruar</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body class="bg-white text-black">
+    <header class="w-full border-b border-black">
+        <div class="max-w-[1100px] mx-auto px-6 md:px-16 lg:px-32 flex justify-between items-center py-4">
+            <a href="../../index.html" class="text-xl font-medium lowercase">arruar</a>
+            <nav class="hidden md:flex space-x-8 text-sm lowercase" aria-label="navegação principal">
+                <a href="../../index.html" class="hover:opacity-75">inicio</a>
+                <div class="relative">
+                    <button class="projects-toggle hover:opacity-75" aria-haspopup="true" aria-expanded="false"
+                        aria-controls="projects-submenu">projeto</button>
+                    <div id="projects-submenu"
+                        class="absolute right-0 mt-2 w-64 bg-white border border-black shadow-sm hidden z-50 dropdown"
+                        role="menu" aria-label="subpastas de projeto">
+                        <div class="px-4 py-2 text-xs text-gray-600 lowercase">subpastas</div>
+                        <a href="arquitetura.html"
+                            class="flex items-center justify-between px-4 py-2 hover:underline submenu-item"
+                            role="menuitem" tabindex="-1"><span>arquitetura</span></a>
+                        <a href="interiores.html"
+                            class="flex items-center justify-between px-4 py-2 hover:underline submenu-item"
+                            role="menuitem" tabindex="-1">
+                            <span>interiores</span>
+                        </a>
+                        <a href="comercial.html"
+                            class="flex items-center justify-between px-4 py-2 hover:underline submenu-item"
+                            role="menuitem" tabindex="-1"><span>comercial</span></a>
+                        <a href="cidade.html"
+                            class="flex items-center justify-between px-4 py-2 hover:underline submenu-item"
+                            role="menuitem" tabindex="-1">
+                            <span>cidade</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="../office.html" class="hover:opacity-75">escritório</a>
+                <a href="../contact.html" class="hover:opacity-75">contato</a>
+            </nav>
+            <button class="menu-button md:hidden leading-none" aria-controls="mobile-menu" aria-expanded="false"
+                aria-label="abrir menu">
+                <span class="hamburger" aria-hidden="true"><span></span><span></span><span></span></span>
+            </button>
+        </div>
+        <div id="mobile-menu"
+            class="fixed top-0 right-0 h-full w-3/4 max-w-xs bg-white border-l border-black transform translate-x-full transition-transform duration-300 ease-out md:hidden z-50"
+            aria-hidden="true">
+            <div class="flex justify-end p-4">
+                <button class="menu-close text-2xl" aria-label="fechar menu">−</button>
+            </div>
+            <nav class="flex flex-col space-y-6 text-lg lowercase px-8" aria-label="navegação móvel">
+                <a href="../../index.html" class="hover:opacity-75 mobile-link">inicio</a>
+                <a href="../projects.html" class="hover:opacity-75 mobile-link">projetos</a>
+                <a href="../office.html" class="hover:opacity-75 mobile-link">escritório</a>
+                <a href="../contact.html" class="hover:opacity-75 mobile-link">contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="py-16 md:py-20">
+        <div class="max-w-[1100px] mx-auto px-6 md:px-16 lg:px-32">
+            <div class="text-sm lowercase text-gray-700 mb-6" data-aos="fade-up">
+                <a href="../projects.html" class="hover:underline">projetos</a> / arquitetura
+            </div>
+            <h1 class="text-2xl font-light lowercase mb-12" data-aos="fade-up">arquitetura</h1>
+
+            <div class="project-grid" data-aos="fade-up">
+                <a href="#" class="project-item project-open" data-project="casaLima">
+                    <img src="../../assets/arquiimg/casaLima/01.png" alt="casa lima">
+                    <div class="project-overlay">
+                        <div class="project-title">casa lima</div>
+                    </div>
+                </a>
+                <a href="#" class="project-item project-open" data-project="casaOlena">
+                    <img src="../../assets/arquiimg/casaOlena/01%20(2).png" alt="casa olena">
+                    <div class="project-overlay">
+                        <div class="project-title">casa olena</div>
+                    </div>
+                </a>
+                <a href="#" class="project-item project-open" data-project="casaTambau">
+                    <img src="../../assets/arquiimg/casaTambau/07.png" alt="casa tambaú">
+                    <div class="project-overlay">
+                        <div class="project-title">casa tambaú</div>
+                    </div>
+                </a>
+                <a href="#" class="project-item project-open" data-project="hospCoracaojesus">
+                    <img src="../../assets/arquiimg/hospCoracaojesus/05-2.png" alt="hospital coração de jesus">
+                    <div class="project-overlay">
+                        <div class="project-title">hospital coração de jesus</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div id="carousel-modal" class="fixed inset-0 bg-black bg-opacity-90 hidden z-50">
+        <button id="carousel-close" class="absolute top-4 right-4 text-white text-2xl">×</button>
+        <button id="carousel-prev"
+            class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-2xl">←</button>
+        <button id="carousel-next"
+            class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-2xl">→</button>
+        <div class="w-full h-full flex items-center justify-center">
+            <img id="carousel-image" class="max-w-[90vw] max-h-[85vh] object-contain" alt="">
+        </div>
+    </div>
+    <footer class="w-full border-t border-black">
+        <div class="max-w-[1100px] mx-auto px-6 md:px-16 lg:px-32 grid grid-cols-4 gap-8 text-xs lowercase py-6">
+            <div>arruar arquitetura © 2025</div>
+            <div>av. paulista 1499, são paulo-sp</div>
+            <div>contato@arruararquitetura.com</div>
+            <div class="flex space-x-4"><a href="#" class="hover:opacity-75">instagram</a><a href="#"
+                    class="hover:opacity-75">linkedin</a><a href="#" class="hover:opacity-75">whatsapp</a></div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../../js/main.js?v=2"></script>
+</body>
+
+</html>
